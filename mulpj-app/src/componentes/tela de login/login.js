@@ -1,10 +1,10 @@
 import React from 'react';
 import './login.css';
+
 export function Login(){
     return (
-<body>
-    <div class="contaneir">  
-    <img src='image/logo.png'></img>
+ <div class="main">
+    <img src="logo.png"></img>
         <div class="login">
             <h1>Login</h1>
             <form>
@@ -13,12 +13,13 @@ export function Login(){
                 <p>Senha</p>  
                 <input type="password" name='senha' required></input>
                 <p><button>LOGAR</button></p>
+                <p class='links'><a href='ablabal'>esqueceu a senha?</a> <a href='sdsad'>Nao tem cadastro?</a></p>
             </form>
         </div>
-    </div>
-</body>
+</div>
+
         
-        );
+    );
 
 
 }
