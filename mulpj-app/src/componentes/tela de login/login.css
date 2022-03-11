@@ -1,0 +1,61 @@
+.contaneir {
+    background-color: black;
+    width: 100vw; height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+.login {
+    border: solid 1px;
+    background: rgba(255, 255, 255, 0.68);
+    width: 25vw;
+    height: 50vh;
+    border-radius: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+}
+.login p {
+    text-align: center;
+    margin: 0;
+   
+}
+.login input {
+   position: relative;
+   left: 50px;
+   margin-right: 95px;
+   border-radius: 50px;
+   width: 260px;
+   height: 30px;
+   background: rgba(255, 255, 255, 0.67);
+   text-align:center;
+}
+
+.login h1 {
+    text-align: center;
+    margin: 0;
+    position:absolute;
+    top: 200px;
+    color:#000000;
+}
+.login button {
+    position: absolute;
+    top: 420px;
+    left: 569px;
+    color: white;
+    background-color: #000000;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+}
+.contaneir img {
+    position: absolute;
+    left: 50.05%;
+    right: 48.87%;
+    top: 21.66%;
+    bottom: 74.14%;
+}
+
+
