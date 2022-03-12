@@ -1,0 +1,41 @@
+.engloba{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.mainn {
+    width: 70vw;
+    height: 45vw;
+    background-color: rgba(255, 255, 255, 0.68);
+    text-align: center;
+    border-radius: 30px;
+    box-shadow:  0px 4px 12px rgba(255, 255, 255, 0.92);
+    
+}
+.mainn input {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    text-align: center;
+}
+.mainn select {
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    text-align: center;
+}
+.mainn label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.mainn p {
+    margin: 0;
+}
+

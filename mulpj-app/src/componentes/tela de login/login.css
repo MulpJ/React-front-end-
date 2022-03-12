@@ -1,65 +1,52 @@
-.login {
-    position: relative;
-    width: 502px;
-    height: 500px;
-    left: 450px;
-    top: 60px;
-    background-color: rgba(255, 255, 255, 0.68);
-    box-shadow: 0px 4px 50px rgba(255, 255, 255, 0.92);
-    border-radius: 52px;
-    border: solid 1px;
-}
-.login h1 {
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 50.5714px;
-    line-height: 59px;
-    color: #000000;
-
-}
-.login input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 80px;
-    margin-top: 2px;
-    width: 350px;
-    height: 30px;
-
-    background-color: rgba(255, 255, 255, 0.67);
-    border-radius: 10px;
-
-    text-align: center;
-}
 .main {
-   background-color: #000000;
     width: 100vw;
     height: 100vh;
-}
-.login button {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    margin-top: 70px;
-    margin-right: 80px;
-    width: 350px;
-    height: 35px;
-    color: white;
-    background: #000000;
-    border-radius: 20px;
+    justify-content: center;
+    background-color: black;
+}
+.login{
+    border: solid 1px;
+    background-color: rgba(255, 255, 255, 0.68);
+    width: 30vw;
+    height: 50vh;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow:  0px 4px 12px rgba(255, 255, 255, 0.92);
+}
+.login input{
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    text-align: center;
 }
 .login p {
-   margin-left: 90px;
-   margin-bottom: 0;
-   
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
+    margin: 0;
+    color: #000;
 }
-.login p a {
-    padding: 20px;
+.login button {
+margin-top: 10px;
+width: 250px;
+height: 30px;
+border-radius: 10px;
+color: white;
+background-color: #000;
+}
+.login a {
+    padding: 10px;
     text-decoration: none;
-    color: #000000;
-  
+    color: #000;
 }
-
+.main img {
+    position: absolute;
+    top: 50px;
+}
 
