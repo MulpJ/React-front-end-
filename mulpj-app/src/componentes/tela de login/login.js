@@ -19,7 +19,11 @@ export function Login(){
               return  tratamento.innerHTML = response.data.error  
             }
             else if (!response.data.error) {
-               
+               localStorage.setItem('nome' , response.data.user.name)
+               localStorage.setItem('plano' , response.data.user.plan)
+               localStorage.setItem('token' , response.data.token)
+               localStorage.setItem('money' , response.data.user.money)
+               window.location = '/cadastro'
             }
             
          

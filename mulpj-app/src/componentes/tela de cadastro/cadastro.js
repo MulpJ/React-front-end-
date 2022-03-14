@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './cadastro.css'
 import logo from './image/Rectangle.png'
 
 export function Cadastro() {
-
+    useEffect(()=>{ 
+        const a =document.querySelector('.test')
+        a.innerHTML = localStorage.getItem('nome') || 'sexo'
+    })    
     return(
         
     <div class="engloba">
+        <div className="test">
+            
+        </div>
         <div class="mainn">
           <h1>Cadastro</h1>
           <form>
