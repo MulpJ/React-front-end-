@@ -60,35 +60,62 @@
         justify-content: center;
         background-color: black;
 }
-.login{
-    border: solid 1px;
-    background-color: rgba(255, 255, 255, 0.68);
-    width: 60vw;
-    height: 60vh;
-    text-align: center;
-    border-radius: 30px;
-    box-shadow:  0px 4px 12px rgba(255, 255, 255, 0.92);
-}   
-.login input{
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.67);
-    text-align: center;
-}
+    .login{
+        border: solid 1px;
+        background-color: rgba(255, 255, 255, 0.68);
+        width: 60vw;
+        height: 60vh;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow:  0px 4px 12px rgba(255, 255, 255, 0.92);
+    }   
+    .login input{
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.67);
+        text-align: center;
+    }
 
-.login button {
-    margin-top: 50px;
-    width: 200px;
-    height: 30px;
-    border-radius: 10px;
-    color: white;
-    background-color: #000;
+    .login button {
+        margin-top: 50px;
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        color: white;
+        background-color: #000;
+    }
+    .login a {
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;    
+    }
 }
-.login a {
-    padding: 10px;
-    text-decoration: none;
-    color: #000;
-    font-size: 11px;    
-}
+@media (max-width: 1600px) {
+    .login input{
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.67);
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+    .login button {
+        margin-top: 60px;
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        background-color: #000;
+    }  
+    .main img {
+        position: absolute;
+        top: 70px;
+        width: 50px;
+        left : 782px;
+    }
+   
+
 }
