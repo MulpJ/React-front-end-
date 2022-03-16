@@ -38,15 +38,16 @@ export function Login(){
         <div className="login">
             <h1>Login</h1>
                 <div className='res'>
-
+               
                 </div>
+                
                 <p>Email</p>  
                 <input type="email" id='email' required></input>
                 <p>Senha</p>  
                 <input type="password" id='senha' required></input>
                 <p><button onClick={getUser}>LOGAR</button></p>
                 <p className='links'><Link className='senhaTrocar' to='/cadastro'>Esqueceu a senha?</Link> <Link className='cadastro' to='/cadastro'>Não tem Cadastro?</Link></p>
-
+             
         </div>
         
 </div>

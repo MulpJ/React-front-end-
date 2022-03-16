@@ -9,31 +9,33 @@ export function Cadastro() {
     
     async function Cadas(){
         try{
-        const nome = document.getElementById('nome').value
-        const email = document.getElementById('email').value
-        const senha = document.getElementById('senha').value
-        const senhaConf = document.getElementById('senhaRep').value
-
-        if (senha != senhaConf){
-            return alert('As Senhas nao condizem') 
+            const nome = document.getElementById('nome').value
+            const email = document.getElementById('email').value
+            const senha = document.getElementById('senha').value
+            const senhaConf = document.getElementById('senhaRep').value
+            if (nome == ""){
+              return  alert("Digite um nome")
+            }
+           else if (senha != senhaConf){
+                return alert('As Senhas nao condizem') 
+            }
+            else if (senha.length < 8){
+                return alert('Sua senha é menor que 8 digitos')
+            }
+        
+            const response = await axios.post('https://apitypescript.cleyssondias.repl.co/User', {"name":nome,
+            "email":email,
+            "password":senha,
+            "plan":"Free"})
+            alert("Usuário Cadastrado Com Sucesso")
+            if (response.data.error){
+                return alert(response.data.error)
+            }
+            
+            }
+        catch (error){
+            console.log(error)
         }
-        else if (senha.length < 8){
-            return alert('Sua senha é menor que 8 digitos')
-        }
-    
-           const response = await axios.post('https://apitypescript.cleyssondias.repl.co/User', {"name":nome,
-           "email":email,
-           "password":senha,
-           "plan":"Free"})
-           alert("Usuário Cadastrado Com Sucesso")
-           if (response.data.error){
-               return alert(response.data.error)
-           }
-         
-        }
-    catch (error){
-        console.log(error)
-    }
 
     }
     return(
@@ -48,14 +50,16 @@ export function Cadastro() {
             </div>
                 <div className="itens">   
                     <h1>Cadastro</h1>
+                
                     <p>Nome Completo</p>
                     <input  id="nome" type="text" required></input>
                     <p>Email</p>
-                    <input id="email"  type="email" required></input>
+                    <input id="email"  type="email" placeholder="Ex: example@example.com" required></input>
                     <p>Senha</p>
                     <input id="senha" type="password" required></input>
                     <p>Repita a Senha</p>
                     <input id="senhaRep" type="password" required></input>
+                    
                             <div className="plano">
                                 <p>Plano</p>
                                 <select id="plano">
@@ -68,7 +72,9 @@ export function Cadastro() {
 
                           </div>
                     <button onClick={Cadas} id="btn">Finalizar</button>
-                    <p><Link to="/login">Login</Link></p>
+                    <div className="link">
+                    <p ><Link to="/login">Login</Link></p>
+                    </div>
                  </div>
 
 

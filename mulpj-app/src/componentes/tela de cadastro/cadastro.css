@@ -22,7 +22,7 @@
     height: 30px;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.67);
-    text-align: center;
+    text-align:center;
     border: solid 1px white;
 }
 .itens {
@@ -37,12 +37,14 @@ h1 {
     line-height: 42px;
     color: black;
 }
-p {
+.itens p {
     margin-top: 15px;
     margin-bottom: 0;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 15px;
+    text-align: left;
+    margin-left: 9px;
     
 }
 .itens button {
@@ -67,6 +69,11 @@ a {
     line-height: 26px;
     color: #000;
     margin: 0;
+
+    
+}
+.link p{
+    text-align: center;
 }
 .plano select {
     width: 400px;
