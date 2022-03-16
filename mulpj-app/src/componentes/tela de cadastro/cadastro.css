@@ -8,4 +8,127 @@
     background-color: black;
 }
 
+.corpo{
+    border: solid 1px;
+    background-color: rgba(255, 255, 255, 0.68);
+    width: 75vw;
+    height: 80vh;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow:  0px 4px 12px rgba(255, 255, 255, 0.92); 
+}
+.corpo input {
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    text-align: center;
+    border: solid 1px white;
+}
+.itens {
+   position: absolute;
+   left: 750px;
+}
+h1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    color: black;
+}
+p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 15px;
+    
+}
+.itens button {
+    margin-top: 30px;
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000;
+    margin: 0;
+}
+.plano select {
+    width: 400px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.67);
+    text-align: center;
+}
+.plano option {
+    font-size: 15px;
+}
+.corpo img {
+    width: 500px;
+    position: absolute;
+    top: 70px;
+    left:230px;
+}
+.img {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 10px;
+}
+.test {
+    font-size: 20px;
+    margin: 0;
+}
 
+
+@media (width: 1600px) {
+    .engloba{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+    }
+    .corpo{
+        border: solid 1px;
+        background-color: rgba(255, 255, 255, 0.68);
+        width: 70vw;
+        height: 65vh;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow:  0px 4px 12px rgba(255, 255, 255, 0.92); 
+
+}
+.itens {
+    position: absolute;
+    left: 890px;
+ }
+ .corpo img {
+    width: 500px;
+    position: absolute;
+    top: 175px;
+    left:300px;
+}
+.plano option {
+    font-size: 15px;
+}
+
+
+}

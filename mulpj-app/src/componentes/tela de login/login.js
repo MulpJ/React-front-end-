@@ -15,19 +15,19 @@ export function Login(){
             let a = `https://apitypescript.cleyssondias.repl.co/User/${email}/${senha}`
             const response = await axios.get(a);
             if (response.data.error){
-              let tratamento =  document.querySelector('.res');
-              return  tratamento.innerHTML = response.data.error  
+              alert(response.data.error) 
             }
             else if (!response.data.error) {
                localStorage.setItem('nome' , response.data.user.name)
                localStorage.setItem('plano' , response.data.user.plan)
                localStorage.setItem('token' , response.data.token)
                localStorage.setItem('money' , response.data.user.money)
-               window.location = '/cadastro'
+               window.location = '/home'
             }
             
          
-        } catch (error) {
+        } 
+        catch (error) {
           console.error(error.message || "Unexpected error.");
         }
       }

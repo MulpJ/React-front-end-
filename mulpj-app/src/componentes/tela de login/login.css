@@ -22,6 +22,7 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.67);
     text-align: center;
+    border: solid 1px white;
 }
 .login p {
     font-family: 'Roboto';
@@ -39,6 +40,7 @@
     border-radius: 10px;
     color: white;
     background-color: #000;
+    
 }
 .login a {
     padding: 10px;
@@ -50,7 +52,7 @@
     top: 50px;
     width: 50px;
 }
-@media (max-width: 667px) {
+@media (width: 375px) {
     .main {
         width: 100vw;
         height: 100vh;
@@ -92,7 +94,7 @@
         font-size: 11px;    
     }
 }
-@media (max-width: 1600px) {
+@media (width: 1600px) {
     .login input{
         width: 300px;
         height: 30px;
@@ -115,6 +117,14 @@
         top: 70px;
         width: 50px;
         left : 782px;
+    }
+}
+    @media (max-width: 1366px) {
+        .main img {
+            position: absolute;
+            top: 70px;
+            width: 50px;
+            left : 662px;
     }
    
 
