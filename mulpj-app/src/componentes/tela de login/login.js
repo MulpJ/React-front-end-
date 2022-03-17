@@ -2,7 +2,6 @@ import React from 'react';
 import './login.css';
 import logo from './image/logo.png'
 import { Link, Route, Router, Routes } from 'react-router-dom';
-import { Cadastro } from '../tela de cadastro/cadastro';
 const axios = require('axios');
 
 
