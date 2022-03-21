@@ -1,13 +1,14 @@
-.header  {
-    height: 100vh;
-    width: 100vw;  
+.header {
+    height: 100%;
+    width: 100%;
+    margin: 0;
 }
 .logo {
+  z-index: 1;
   width: 60px;
   position: absolute;
   top: 40px;
   left: 30px
-  
 }
 .fundo {
     height: 100vh;
@@ -27,6 +28,7 @@
     color: #FFFFFF;
 }
 .nome {
+    z-index: 1;
     position: absolute;
     top: 10px;
     left: 100px;
@@ -36,6 +38,7 @@
     color: #FFFFFF
 }
 .header a {
+     z-index: 1;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 20px;
@@ -69,6 +72,25 @@
     color: #FFFFFF;
   
 }
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+.img img {
+    opacity: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+.img img.selected {
+    opacity: 1;
+}
+
+
 
 
 
