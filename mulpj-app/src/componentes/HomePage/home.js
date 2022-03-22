@@ -12,7 +12,6 @@ import mad from "./image/mad.jpg"
 import { Link } from "react-router-dom";
 import logo from "../tela de login/image/logo.png"
 import it from './image/it.jpg'
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -35,7 +34,7 @@ export function HomePage() {
       modules={[Autoplay, Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={0}
       slidesPerView={1}
-      autoplay={{delay: 3000}}
+      autoplay={{delay: 5000}}
      
     >
         <header className="header">

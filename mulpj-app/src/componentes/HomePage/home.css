@@ -61,7 +61,7 @@
     border: solid 1px white;
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 36.3877px;
+    font-size: 25px;
     padding: 10px 80px;
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -74,12 +74,12 @@
 .desc {
     z-index: 1;
     position: absolute;
-    left: 340px;
+    left: 300px;
     top: 600px;
     font-family: 'Roboto';
     font-style: normal;
-    color: red;
-  
+    color: rgb(197, 24, 24);
+
 }
 
 
